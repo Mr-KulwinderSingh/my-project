@@ -31,7 +31,7 @@
             <a class="dropdown-item" href="#">Japanese</a>
           </div>
         </li>
-        <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+        <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login" >Sign In / Sign Up</a></li>
       </ul>
     </div>
     <div class="d-none d-md-block">
@@ -57,7 +57,7 @@
             <span class="d-inline d-sm-none"><br></span>
             <strong><mark>First One is free!</mark></strong>
           </p>
-          <button class="btn btn-success btn-lg">Sign up!</button>
+          <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal" >Sign up!</button>
           <p class="text-muted"><small>You must be over 18 to sign up our service, Please, drink responsibly!</small>
           </p>
         </section>
@@ -194,6 +194,36 @@
     </section>
     <button>Click me!</button>
   </article>
+  <div class="modal" tabindex="-1" id="signUpModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign Up to Whiskey Drop!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="Password">Password</label>
+              <input type="password" class="form-control" id="Password">
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
