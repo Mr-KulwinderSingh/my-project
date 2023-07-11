@@ -16,7 +16,19 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-light bg-light navbar-expand-sm">
+  <div class="container-fluid navalert-container">
+    <article class="container-fluid alert-container">
+      <div class="row d-none d-sm-block">
+        <div class="col-12">
+          <div class="site-wide-alert alert alert-warning">
+            <strong>Sale Now on!</strong> We've got a Sale on. Get a
+            12-months subscription
+            for the price of 6! <a href="">See here for details!</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <nav class="navbar navbar-dark navbar-expand-sm">
     <a href="/" class="navbar-brand">Whiskey Drop!</a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,171 +53,164 @@
     </div>
     <div class="d-none d-md-block">
       <p class="navbar-text my-auto mr-2"><i>Great Whiskey delivered to your door!</i></p>
-      <a href="/login">Sign In / Sign Up</a>
+      <a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
     </div>
   </nav>
-  <!-- <article class="container alert-container">
-    <div class="row d-none d-sm-block">
+  </div>
+  <div class="container-fluid callout-container">
+    <!-- Callout -->
+    <div class="opaque-overlay">and</div>
+    <div class="row">
       <div class="col-12">
-        <div class="alert alert-warning"><strong>Sale Now on!</strong> We've got a Sale on. Get a 12-months subscription
-          for the price of 6! <a href="">See here for details!</a>
-        </div>
+        <section class="callout jumbotron mt-3 text-center">
+          <h1 class="jumbotron-header">The finest Whiskey delivered to your doorstep</h1>
+          <hr class="block-divider block-divider-orange">
+          <p class="lead">Sign up today to start receiving the world's best Whiskeys every month.
+            <s class="d-none d-sm-inline">€19.99</s>
+            <span class="d-inline d-sm-none"><br></span>
+            <strong><mark>First One is free!</mark></strong>
+          </p>
+          <button class="btn btn-success btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign
+            up!</button>
+          <p class="text-muted"><small>You must be over 18 to sign up our service, Please, drink responsibly!</small>
+          </p>
+        </section>
       </div>
     </div>
-    </div> -->
-    <div class="container-fluid callout-container">
-      <!-- Callout -->
-      <div class="opaque-overlay">and</div>
-      <div class="row">
-        <div class="col-12">
-          <section class="callout jumbotron mt-3 text-center">
-            <h1 class="jumbotron-header">The finest Whiskey delivered to your doorstep</h1>
-            <hr class="block-divider block-divider-orange">
-            <p class="lead">Sign up today to start receiving the world's best Whiskeys every month.
-              <s class="d-none d-sm-inline">€19.99</s>
-              <span class="d-inline d-sm-none"><br></span>
-              <strong><mark>First One is free!</mark></strong>
-            </p>
-            <button class="btn btn-success btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign up!</button>
-            <p class="text-muted"><small>You must be over 18 to sign up our service, Please, drink responsibly!</small>
-            </p>
-          </section>
-        </div>
-      </div>
-    </div>
-    <!-- /Callout -->
+  </div>
+  <!-- /Callout -->
 
-    <!-- Quotes-->
-    <div class="container quotes-container">
-      <section class="quotes">
-        <div class="row">
-          <div class="col-12 my-5">
-            <h2 class="text-uppercase">Qutoes:</h2>
-          </div>
+  <!-- Quotes-->
+  <div class="container quotes-container">
+    <section class="quotes">
+      <div class="row">
+        <div class="col-12 my-5">
+          <h2 class="text-uppercase">Qutoes:</h2>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="media">
-              <div class="d-none d-sm-block">
-                <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" width="100" alt="">
-              </div>
-              <div class="media-body">
-                <blockquote class="blockquote">
-                  <p>I have been introduced to more than 10 international Whiskeys I
-                    knew about.
-                  </p>
-                  <p>Jane Doe</p>
-                </blockquote>
-              </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="media">
+            <div class="d-none d-sm-block">
+              <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" width="100" alt="">
             </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="media">
-              <div class="d-none d-sm-block">
-                <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" width="100" alt="">
-              </div>
-              <div class="media-body">
-                <blockquote class="blockquote">
-                  <p>I haven't been sober for months!
-                  </p>
-                  <p>Jane Doe</p>
-                </blockquote>
-              </div>
+            <div class="media-body">
+              <blockquote class="blockquote">
+                <p>I have been introduced to more than 10 international Whiskeys I
+                  knew about.
+                </p>
+                <p>Jane Doe</p>
+              </blockquote>
             </div>
           </div>
         </div>
-        <!-- /Quotes -->
-      </section>
-    </div>
-    <!-- Features-->
-    <div class="features-container">
-      <section class="features--">
-        <div class="row">
-          <div class="col-12 col-md-6 my-5">
-            <h2 class="text-uppercase">Features:</h2>
+        <div class="col-12 col-md-6">
+          <div class="media">
+            <div class="d-none d-sm-block">
+              <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" width="100" alt="">
+            </div>
+            <div class="media-body">
+              <blockquote class="blockquote">
+                <p>I haven't been sober for months!
+                </p>
+                <p>Jane Doe</p>
+              </blockquote>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1: <span
-                class="badge badge-success">New!</span></h3>
-            <p>No phone calls and personal visit required, everything done online and hassle free.
+      </div>
+      <!-- /Quotes -->
+    </section>
+  </div>
+  <!-- Features-->
+  <div class="features-container">
+    <section class="features--">
+      <div class="row">
+        <div class="col-12 col-md-6 my-5">
+          <h2 class="text-uppercase">Features:</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1: <span
+              class="badge badge-success">New!</span></h3>
+          <p>No phone calls and personal visit required, everything done online and hassle free.
+            No phone calls and personal visit required, everything done online and hassle free
+            No phone calls and personal visit required, everything done online and hassle free
+            No phone calls and personal visit required, everything done online and hassle free
+            No phone calls and personal visit required, everything done online and hassle free
+          </p>
+          <p><a class="btn btn-sm btn-light">Read more!</a></p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature">
+            <h3><i class="fa-thin fa-flower d-none d-sm-inline"></i> Feature 2:</h3>
+            <p>No phone calls and personal visit required, everything done online
+              No phone calls and personal visit required, everything done online and hassle free.
+              No phone calls and personal visit required, everything done online and hassle free.
               No phone calls and personal visit required, everything done online and hassle free
+              No phone calls and personal visit required, everything done online and hassle free
+            </p>
+            <p><a class="btn btn-sm btn-light">Read more!</a></p>
+          </div>
+        </div>
+        <div class="col-12 d-md-none d-lg-block col-lg-4">
+          <div class="feature">
+            <h3><i class="fa-thin fa-credit-card d-none d-sm-inline"></i>Feature 3:</h3>
+            <p>No phone calls and personal visit required, everything done online
+              No phone calls and personal visit required, everything done online and hassle free.
               No phone calls and personal visit required, everything done online and hassle free
               No phone calls and personal visit required, everything done online and hassle free
               No phone calls and personal visit required, everything done online and hassle free
             </p>
             <p><a class="btn btn-sm btn-light">Read more!</a></p>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="feature">
-              <h3><i class="fa-thin fa-flower d-none d-sm-inline"></i> Feature 2:</h3>
-              <p>No phone calls and personal visit required, everything done online
-                No phone calls and personal visit required, everything done online and hassle free.
-                No phone calls and personal visit required, everything done online and hassle free.
-                No phone calls and personal visit required, everything done online and hassle free
-                No phone calls and personal visit required, everything done online and hassle free
-              </p>
-              <p><a class="btn btn-sm btn-light">Read more!</a></p>
-            </div>
-          </div>
-          <div class="col-12 d-md-none d-lg-block col-lg-4">
-            <div class="feature">
-              <h3><i class="fa-thin fa-credit-card d-none d-sm-inline"></i>Feature 3:</h3>
-              <p>No phone calls and personal visit required, everything done online
-                No phone calls and personal visit required, everything done online and hassle free.
-                No phone calls and personal visit required, everything done online and hassle free
-                No phone calls and personal visit required, everything done online and hassle free
-                No phone calls and personal visit required, everything done online and hassle free
-              </p>
-              <p><a class="btn btn-sm btn-light">Read more!</a></p>
-            </div>
-          </div>
         </div>
-      </section>
-    </div>
-    <!-- /Features-->
-    <!-- Monthly Favorites-->
-    <section class="montly-favorites">
-      <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name of the Whiskey</th>
-            <th scope="col">Country of origin</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Jack Daniel</td>
-            <td>Otto</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jamson</td>
-            <td>Thornton</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Tullamore Dew</td>
-            <td>the Bird</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Teachers</td>
-            <td>Thornton</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Red Label</td>
-            <td>the Bird</td>
-          </tr>
-        </tbody>
-      </table>
-
+      </div>
     </section>
-    <button>Click me!</button>
+  </div>
+  <!-- /Features-->
+  <!-- Monthly Favorites-->
+  <section class="montly-favorites">
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name of the Whiskey</th>
+          <th scope="col">Country of origin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Jack Daniel</td>
+          <td>Otto</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jamson</td>
+          <td>Thornton</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Tullamore Dew</td>
+          <td>the Bird</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Teachers</td>
+          <td>Thornton</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Red Label</td>
+          <td>the Bird</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+  <button>Click me!</button>
   </article>
   <div class="modal" tabindex="-1" id="signUpModal">
     <div class="modal-dialog">
